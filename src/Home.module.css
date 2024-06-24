@@ -1,0 +1,171 @@
+.indexLayout {
+  @apply grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.5fr 4fr;
+}
+
+.indexLayout > * {
+  background: red;
+}
+
+.indexLayout > section {
+  @apply p-2 m-1 rounded-2xl;
+  box-shadow: var(--shadow0);
+  background-color: var(--background);
+}
+
+.topbar {
+  display: none;
+  @apply col-span-2 row-span-1 flex flex-row items-end justify-end p-2;
+}
+
+.topbar > button,
+.topbar > a {
+  @apply p-2 size-10 rounded-xl m-1 duration-200;
+  box-shadow: var(--shadow1);
+}
+
+.topbar > button:hover,
+.topbar > a:hover {
+  @apply duration-200;
+  box-shadow: var(--hshadow1);
+}
+
+.active {
+  border: 2px solid var(--surface0);
+}
+
+.aboutMe {
+  @apply rounded-2xl p-2;
+  background: var(--background);
+  box-shadow: var(--shadow00);
+}
+
+.avatar {
+  @apply flex flex-row justify-center items-center p-2;
+}
+
+.avatar > img {
+  @apply rounded-full inline-block;
+}
+
+.details {
+  @apply ml-2;
+}
+
+.details > h1 {
+  @apply inline text-2xl;
+  color: var(--text);
+}
+
+.details > p {
+  color: var(--subtext0);
+}
+
+/* .aboutMe > .socialButtons */
+.socialButtons {
+  @apply flex flex-row justify-center items-center p-4;
+}
+
+.socialButtons > a {
+  @apply inline-block text-2xl rounded-xl p-2 ml-2 mr-2 duration-150;
+  background-color: var(--background);
+  box-shadow: var(--shadow1);
+}
+
+.socialButtons > a:hover {
+  box-shadow: var(--hshadow1);
+}
+
+.skills {
+  @apply rounded-2xl p-2 py-3.5 mt-1.5 flex flex-col items-center justify-center;
+  background: var(--background);
+  box-shadow: var(--shadow00);
+}
+
+.skills > h3 {
+  @apply text-lg text-center;
+}
+
+.skillsIcons {
+  @apply grid grid-cols-4 gap-3 mt-2;
+}
+
+.skillIcon {
+  @apply rounded-xl p-2 relative flex flex-col items-center;
+  background-color: var(--background);
+  box-shadow: var(--shadow1);
+}
+
+.skillTooltip {
+  @apply absolute -top-8 text-center bg-opacity-100 hidden rounded-md p-1 mb-4;
+  background-color: var(--surface0);
+}
+
+.projectsTitle {
+  @apply text-center text-2xl;
+}
+
+.projectsContainer {
+  @apply grid grid-cols-2 p-1 mt-1.5 gap-4;
+}
+
+.project {
+  @apply rounded-xl p-2 duration-200;
+  box-shadow: var(--shadow1);
+}
+
+.project:hover {
+  box-shadow: var(--hshadow1);
+}
+
+.projectInfo {
+  @apply flex flex-row;
+}
+
+.projectInfo > img {
+  @apply rounded-md size-20;
+}
+
+.projectText {
+  @apply ml-1;
+}
+
+.projectText > h3 {
+  @apply text-lg;
+}
+
+.projectText > p {
+  @apply text-sm;
+  color: var(--subtext0);
+}
+
+.projectIcons {
+  @apply flex flex-row p-1 my-1 gap-1.5;
+}
+
+.projectIcon {
+  @apply rounded-xl p-0.5;
+  box-shadow: var(--shadow0);
+}
+
+@media only screen and (max-width: 600px) {
+  .indexLayout {
+    @apply grid grid-cols-1;
+    grid-template-rows: 0.5fr 3fr 3fr;
+  }
+
+  .topbar {
+    @apply col-span-1 row-span-1;
+  }
+
+  .aboutMe {
+    @apply col-span-1 row-span-2;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .projectsContainer {
+    @apply grid-cols-1;
+  }
+}

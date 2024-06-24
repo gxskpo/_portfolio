@@ -1,0 +1,161 @@
+---
+import styles from "../Home.module.css";
+import "../globals.css";
+import Project from "../components/Project";
+import SkillIcon from "../components/SkillIcon";
+import { Image } from "astro:assets";
+import * as Icons from "../components/icons";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Holii, soy Haruka, A veces programo cosas
+    No soy Hayami lpm"
+    />
+    <meta
+      property="og:description"
+      content="Holii, soy Haruka, A veces programo cosas
+    No soy Hayami lpm"
+    />
+    <meta property="og:title" content="Haruka Dev - I love .NET" />
+    <title>Haruka Dev - I love .NET</title>
+  </head>
+
+  <body>
+    <main class={styles.indexLayout}>
+      <section class={styles.topbar}>
+        <button class={styles.active}>
+          <Icons.Home />
+        </button>
+        <!--
+        <a href="https://google.com">
+          <Icons.Newspaper />
+	  </a>
+	-->
+        <a
+          href="https://github.com/gxskpo/portfolio"
+          target="_blank"
+          aria-label="Source code"
+        >
+          <Icons.Code />
+        </a>
+      </section>
+      <section class={styles.info}>
+        <div class={styles.aboutMe}>
+          <span class={styles.avatar}>
+            <Image
+              alt="avatar"
+              src="https://avatars.githubusercontent.com/u/97119998"
+              width="80"
+              height="80"
+              loading="eager"
+            />
+            <div class={styles.details}>
+              <h1>Haruka</h1>
+              <p class={styles.description}>16yo backend dev</p>
+            </div>
+          </span>
+
+          <div class={styles.socialButtons}>
+            <a
+              href="https://paypal.me/gxskpo"
+              target="_blank"
+              aria-label="paypal"
+            >
+              <Icons.Paypal />
+            </a>
+            <!--
+            <a href="" target="_blank">
+              <Icons.Discord />
+	    </a>
+	    -->
+            <a
+              href="https://github.com/gxskpo"
+              target="_blank"
+              aria-label="github"
+            >
+              <Icons.Github />
+            </a>
+            <a
+              href="https://instagram.com/gxskpo"
+              target="_blank"
+              aria-label="instagram"
+            >
+              <Icons.Instagram />
+            </a>
+            <a
+              href="https://twitter.com/gxskpo"
+              target="_blank"
+              aria-label="twitter"
+            >
+              <Icons.Twitter />
+            </a>
+          </div>
+        </div>
+        <div class={styles.skills}>
+          <h3>Skills</h3>
+          <div class={styles.skillsIcons}>
+            <SkillIcon name="C#">
+              <Icons.CS />
+            </SkillIcon>
+            <SkillIcon name="JavaScript">
+              <Icons.JS />
+            </SkillIcon>
+            <SkillIcon name="TypeScript">
+              <Icons.TS />
+            </SkillIcon>
+            <SkillIcon name="Rust">
+              <Icons.RS />
+            </SkillIcon>
+            <SkillIcon name="React">
+              <Icons.React />
+            </SkillIcon>
+            <SkillIcon name="Next.js">
+              <Icons.Next />
+            </SkillIcon>
+            <SkillIcon name="Node.js">
+              <Icons.Node />
+            </SkillIcon>
+            <SkillIcon name=".NET">
+              <Icons.DotNet />
+            </SkillIcon>
+            <SkillIcon name="SQLite">
+              <Icons.SQLite />
+            </SkillIcon>
+            <SkillIcon name="MySQL">
+              <Icons.MySQL />
+            </SkillIcon>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class={styles.projectsTitle}>My projects</h2>
+        <div class={styles.projectsContainer}>
+          <Project
+            name="Sunburst"
+            iconUrl="https://hwrk.lol/sunburst/avatar/default.png"
+            description="Multi-purpose discord bot"
+            url="https://github.com/gxskpo/sunburst"
+          >
+            <Icons.Discord />
+            <Icons.RS />
+          </Project>
+          <Project
+            name="Journal"
+            iconUrl="https://hwrk.lol/icons/perro_puto.jpeg"
+            description="Encrypted journal made with Flask"
+            url="https://google.com"
+          >
+            <Icons.PY />
+            <Icons.SQLite />
+          </Project>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
