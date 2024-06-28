@@ -1,7 +1,7 @@
 .indexLayout {
   @apply grid;
   max-width: 80%;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.2fr 2fr;
   grid-template-rows: 0.5fr 4fr;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .skillsIcons {
-  @apply grid grid-cols-4 gap-3 mt-2;
+  @apply grid grid-cols-5 gap-3 mt-2;
 }
 
 .skillIcon {
@@ -156,7 +156,7 @@
     @apply grid grid-cols-1;
     max-width: 100%;
 
-    grid-template-rows: 0.5fr 3fr 3fr;
+    grid-template-rows: 0.2fr 2fr 3fr;
   }
 
   .topbar {
@@ -168,7 +168,11 @@
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 1000px) {
+  .indexLayout {
+    max-width: 95%;
+  }
+
   .projectsContainer {
     @apply grid-cols-1;
   }
