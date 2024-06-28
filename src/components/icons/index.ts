@@ -20,8 +20,10 @@ import Sun from "./Sun";
 import Code from "./Code";
 import PY from "./PY";
 import Flask from "./Flask";
+import Mail from "./Mail";
 
 export {
+  Mail,
   Flask,
   PY,
   Code,

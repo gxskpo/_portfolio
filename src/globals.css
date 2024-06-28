@@ -24,6 +24,7 @@
   --blue: #1e66f5;
   --sky: #04a5e5;
   --sapphire: #209fb5;
+  --lavender: #7287fd;
 
   color: var(--text);
 }
@@ -50,6 +51,7 @@ body.dark {
   --blue: #89b4fa;
   --sky: #89dceb;
   --sapphire: #74c7ec;
+  --lavender: #b4befe;
 
   color: var(--text);
 }
