@@ -5,6 +5,7 @@ import Project from "../components/Project";
 import SkillIcon from "../components/SkillIcon";
 import { Image } from "astro:assets";
 import * as Icons from "../components/icons";
+import ModeToggle from "../components/ModeToggle";
 ---
 
 <html lang="en">
@@ -26,7 +27,7 @@ import * as Icons from "../components/icons";
     <title>Haruka Dev - I love .NET</title>
   </head>
 
-  <body>
+  <body class="dark">
     <main class={styles.indexLayout}>
       <section class={styles.topbar}>
         <button class={styles.active}>
@@ -44,6 +45,7 @@ import * as Icons from "../components/icons";
         >
           <Icons.Code />
         </a>
+        <ModeToggle client:load />
       </section>
       <section class={styles.info}>
         <div class={styles.aboutMe}>

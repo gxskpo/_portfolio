@@ -1,5 +1,6 @@
 .indexLayout {
   @apply grid;
+  max-width: 80%;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 0.5fr 4fr;
 }
@@ -20,7 +21,8 @@
 }
 
 .topbar > button,
-.topbar > a {
+.topbar > a,
+.topbarButton {
   @apply p-2 size-10 rounded-xl m-1 duration-200 flex flex-col align-middle justify-center items-center;
   box-shadow: var(--shadow1);
 }
@@ -152,6 +154,8 @@
 @media only screen and (max-width: 600px) {
   .indexLayout {
     @apply grid grid-cols-1;
+    max-width: 100%;
+
     grid-template-rows: 0.5fr 3fr 3fr;
   }
 

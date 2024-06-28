@@ -28,32 +28,30 @@
   color: var(--text);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Catppuccin latte colorscheme */
+body.dark {
+  /* Catppuccin latte colorscheme */
 
-    /* Main colors */
-    --background: #1e1e2e;
-    --text: #cdd6f4;
-    --subtext0: #a6adc8;
-    --subtext1: #bac2de;
-    --surface0: #313244;
-    --surface1: #45475a;
+  /* Main colors */
+  --background: #1e1e2e;
+  --text: #cdd6f4;
+  --subtext0: #a6adc8;
+  --subtext1: #bac2de;
+  --surface0: #313244;
+  --surface1: #45475a;
 
-    /* Shadows */
-    --shadow0: inset 5px 5px 10px #181825, inset -5px -5px 10px #242437;
-    --shadow00: inset 5px 5px 10px #15151c, inset -5px -5px 10px #1f1f2a;
-    --shadow1: 5px 5px 10px #181825, -5px -5px 10px #242437;
-    --hshadow1: 10px 10px 20px #181825, -10px -10px 20px #242437;
+  /* Shadows */
+  --shadow0: inset 5px 5px 10px #181825, inset -5px -5px 10px #242437;
+  --shadow00: inset 5px 5px 10px #15151c, inset -5px -5px 10px #1f1f2a;
+  --shadow1: 5px 5px 10px #181825, -5px -5px 10px #242437;
+  --hshadow1: 10px 10px 20px #181825, -10px -10px 20px #242437;
 
-    /* Extra colors */
-    --yellow: #f9e2af;
-    --blue: #89b4fa;
-    --sky: #89dceb;
-    --sapphire: #74c7ec;
+  /* Extra colors */
+  --yellow: #f9e2af;
+  --blue: #89b4fa;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
 
-    color: var(--text);
-  }
+  color: var(--text);
 }
 
 *::-webkit-scrollbar {
@@ -61,6 +59,6 @@
 }
 
 body {
-  @apply p-1.5;
+  @apply p-1.5 flex flex-col items-center justify-center;
   background-color: var(--background);
 }
