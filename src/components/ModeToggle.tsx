@@ -9,10 +9,7 @@ export default function ModeToggle() {
     let darkmodeEnabled =
       document.body.classList.contains("dark") ||
       window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    if (!darkmodeEnabled) {
-      setDarkMode(false);
-    }
+    setDarkMode(darkmodeEnabled);
   }, []);
 
   const handler = () => {
