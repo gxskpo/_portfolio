@@ -1,0 +1,26 @@
+{
+  "name": "Haruka",
+  "age": 16,
+  "skills": {
+    "langs": ["Python", "Javascript", "Typescript", "C#"],
+    "frameworks": [".NET Core", "Next.js", "Flask", "React"],
+    "databases": ["SQLite", "MySQL"]
+  },
+  "projects": [
+    {
+      "name": "Tiramisu",
+      "description": "Discord API wrapper for .NET",
+      "techs": ["C#", ".NET Core", "Discord"]
+    },
+    {
+      "name": "SunBurst",
+      "description": "Multi-purpouse discord bot",
+      "techs": ["Rust", "Discord"]
+    },
+    {
+      "name": "Journal",
+      "discord": "Encrypted journal made with flask",
+      "techs": ["Python", "Flask"]
+    }
+  ]
+}
