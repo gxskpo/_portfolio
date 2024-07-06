@@ -1,6 +1,6 @@
 .indexLayout {
   @apply grid;
-  max-width: 80%;
+  max-width: 90%;
   grid-template-columns: 1.2fr 2fr;
   grid-template-rows: 0.5fr 4fr;
 }
@@ -79,6 +79,19 @@
   box-shadow: var(--hshadow1);
 }
 
+.description {
+  @apply rounded-2xl p-4 mt-1.5;
+  box-shadow: var(--shadow00);
+}
+
+.description > h2 {
+  @apply text-center font-semibold;
+}
+
+.description > p {
+  @apply text-sm text-pretty;
+}
+
 .skills {
   @apply rounded-2xl p-2 py-3.5 mt-1.5 flex flex-col items-center justify-center;
   background: var(--background);
@@ -86,7 +99,7 @@
 }
 
 .skills > h3 {
-  @apply text-lg text-center;
+  @apply text-lg text-center font-semibold;
 }
 
 .skillsIcons {
@@ -105,7 +118,7 @@
 }
 
 .projectsTitle {
-  @apply text-center text-2xl;
+  @apply text-center text-2xl font-semibold;
 }
 
 .projectsContainer {
@@ -130,7 +143,7 @@
 }
 
 .projectText {
-  @apply ml-1;
+  @apply mx-3;
 }
 
 .projectText > h3 {
@@ -155,7 +168,6 @@
   .indexLayout {
     @apply grid grid-cols-1;
     max-width: 100%;
-
     grid-template-rows: 0.2fr 2fr 3fr;
   }
 
