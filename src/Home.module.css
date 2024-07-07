@@ -80,7 +80,7 @@
 }
 
 .description {
-  @apply rounded-2xl p-4 mt-1.5;
+  @apply rounded-2xl p-7 mt-1.5;
   box-shadow: var(--shadow00);
 }
 
