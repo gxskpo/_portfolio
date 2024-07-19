@@ -52,7 +52,7 @@
 }
 
 .details {
-  @apply ml-2;
+  @apply ml-2 text-center;
 }
 
 .details > h1 {
@@ -166,13 +166,21 @@
 
 @media only screen and (max-width: 600px) {
   .indexLayout {
-    @apply grid grid-cols-1;
+    @apply flex flex-col;
     max-width: 100%;
     grid-template-rows: 0.2fr 2fr 3fr;
   }
 
+  .projectSection {
+    height: auto !important;
+  }
+
   .topbar {
     @apply col-span-1 row-span-1;
+  }
+
+  .description > p {
+    @apply text-wrap;
   }
 
   .aboutMe {
@@ -181,11 +189,17 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .socialButtons > a {
+    @apply inline-block text-2xl rounded-xl p-1.5 mx-2 duration-150;
+    background-color: var(--background);
+    box-shadow: var(--shadow1);
+  }
+
   .indexLayout {
     max-width: 95%;
   }
 
   .projectsContainer {
-    @apply grid-cols-1;
+    @apply grid-cols-1 p-2;
   }
 }
